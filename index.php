@@ -97,24 +97,21 @@
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="well-middle">
               <div class="single-well">
-                <a href="#">
-                  <h4 class="sec-head">project Maintenance</h4>
-                </a>
                 <p>
-                  Redug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure aspernatur sit adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure
+                Crafting Digital Excellence. We specialize in creating cutting-edge websites that captivate, communicate, and convert. Elevate your online presence with our expert team's innovative designs and seamless functionality.
                 </p>
                 <ul>
                   <li>
-                    <i class="bi bi-check"></i> Interior design Package
+                    <i class="bi bi-check"></i> Live chat
                   </li>
                   <li>
-                    <i class="bi bi-check"></i> Building House
+                    <i class="bi bi-check"></i> Responsive Design
                   </li>
                   <li>
-                    <i class="bi bi-check"></i> Reparing of Residentail Roof
+                    <i class="bi bi-check"></i> Payment Gateway
                   </li>
                   <li>
-                    <i class="bi bi-check"></i> Renovaion of Commercial Office
+                    <i class="bi bi-check"></i> Social Media
                   </li>
                   <li>
                     <i class="bi bi-check"></i> Make Quality Products
