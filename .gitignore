@@ -1,5 +1,8 @@
 blog-details.html
-assets/
+assets/vendor/
+assets/img/blog
+assets/img/team
+assets/img/venubox
 forms/
 blog.html
 carrer.html
