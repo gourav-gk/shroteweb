@@ -6,6 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Shrote</title>
+  <!-- <link rel="icon" type="image/png" href="assets/img/about/Shrote-Water-Logo.png"> -->
+
+  
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -85,7 +88,7 @@
             <div class="well-left">
               <div class="single-well">
                 <a href="#">
-                  <img src="assets/img/about/1.jpg" alt="">
+                  <img src="assets/img/about/11.png" alt="">
                 </a>
               </div>
             </div>
@@ -247,7 +250,7 @@
     <div class="reviews-area">
       <div class="row g-0">
         <div class="col-lg-6">
-          <img src="assets/img/about/2.jpg" alt="" class="img-fluid">
+          <img src="assets/img/about/22.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-lg-6 work-right-text d-flex align-items-center">
           <div class="px-5 py-5 py-lg-0">
