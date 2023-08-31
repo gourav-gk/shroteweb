@@ -23,6 +23,86 @@
 
 <style>
   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.job-listings {
+  
+  display: inline-block;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.job-card {
+  
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.apply-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.application-form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.application-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.application-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.application-form input,
+.application-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.application-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+
+
+
+
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -72,6 +152,37 @@
   }
   
 </style>
+
+
+
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const applyButtons = document.querySelectorAll(".apply-button");
+  const overlays = document.querySelectorAll(".application-form-overlay");
+
+  applyButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      overlays[index].style.display = "flex";
+    });
+  });
+
+  const forms = document.querySelectorAll(".job-application-form");
+
+  forms.forEach((form, index) => {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      // Handle form submission, e.g., send data to server
+      // You'd need to implement backend logic to process the form data
+      // and store it in a database.
+      alert("Application submitted!");
+      form.reset();
+      overlays[index].style.display = "none";
+    });
+  });
+});
+</script>
+
+
 </head>
 <body>
 <header id="header" class="fixed-top d-flex align-items-center">
@@ -95,26 +206,131 @@
   <div class="header">
     <h1  class="text-white">Career Opportunities</h1>
   </div>
-  <div class="container pt-5">
-    <div class="job-listing">
-      <h2 class="job-title">Web Developer</h2>
-      <p class="job-description">
-        We are looking for a skilled web developer to join our team. If you have a passion for building
-        interactive and user-friendly websites, we want to hear from you!
-      </p>
-      <a class="apply-button" href="#">Apply Now</a>
-    </div>
-    
-    <div class="job-listing">
-      <h2 class="job-title">Graphic Designer</h2>
-      <p class="job-description">
-        Are you a creative mind with a passion for design? Join our team as a graphic designer and help
-        bring our visual ideas to life.
-      </p>
-      <a class="apply-button" href="#">Apply Now</a>
-    </div>
-    <!-- Add more job listings here -->
+
+  
+
+
+
+
+
+
+
+  <section class="job-listings">
+  <div class="job-card">
+    <h2>Software Developer</h2>
+    <p>Join us in creating amazing software applications.</p>
+    <button class="apply-button">Apply Now</button>
   </div>
+  <!-- Add more job cards here -->
+</section>
+<div class="application-form-overlay">
+  <div class="application-form">
+    <h2>Apply for Software Developer Position</h2>
+    <form class="job-application-form">
+      <!-- ... Your form fields ... -->
+      <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="resume">Resume/CV:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        
+        <label for="cover-letter">Cover Letter:</label>
+        <textarea id="cover-letter" name="coverLetter" rows="4" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</div>
+
+  <section class="job-listings">
+  <div class="job-card">
+    <h2>Internships</h2>
+    <p>Join us in creating amazing software applications.</p>
+    <button class="apply-button">Apply Now</button>
+  </div>
+  <!-- Add more job cards here -->
+</section>
+<div class="application-form-overlay">
+  <div class="application-form">
+    <h2>Apply for Intern Position</h2>
+    <form class="job-application-form">
+      <!-- ... Your form fields ... -->
+      <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="resume">Resume/CV:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        
+        <label for="cover-letter">Cover Letter:</label>
+        <textarea id="cover-letter" name="coverLetter" rows="4" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</div>
+  <section class="job-listings">
+  <div class="job-card">
+    <h2>Marketing Manager</h2>
+    <p>Join us in Marketing.</p>
+    <button class="apply-button">Apply Now</button>
+  </div>
+  <!-- Add more job cards here -->
+</section>
+<div class="application-form-overlay">
+  <div class="application-form">
+    <h2>Apply for Marketing Position</h2>
+    <form class="job-application-form">
+      <!-- ... Your form fields ... -->
+      <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="resume">Resume/CV:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        
+        <label for="cover-letter">Cover Letter:</label>
+        <textarea id="cover-letter" name="coverLetter" rows="4" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</div>
+
+<section class="job-listings">
+  <div class="job-card">
+    <h2>Graphics Designer</h2>
+    <p>Join us in Design amazing software applications.</p>
+    <button class="apply-button">Apply Now</button>
+  </div>
+  <!-- Add more job cards here -->
+</section>
+<div class="application-form-overlay">
+  <div class="application-form">
+    <h2>Apply for Graphics Design Position</h2>
+    <form class="job-application-form">
+      <!-- ... Your form fields ... -->
+      <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="resume">Resume/CV:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        
+        <label for="cover-letter">Cover Letter:</label>
+        <textarea id="cover-letter" name="coverLetter" rows="4" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</div>
+
+
 
   <?php include('footer.php') ?>
 </body>
